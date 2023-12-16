@@ -20,54 +20,54 @@
 3. Maven 3.9.1
 
 ## Libraries :
-1. be-config-service :
+### 1. be-config-service :
    a. Config Server
    
-2. be-discovery :
+### 2. be-discovery :
    a. Spring Boot Actuator
    b. Config Client
    c. Eureka Server
 
-3. be-gateway
+### 3. be-gateway
    a. Spring Boot Actuator <br>
    b. Config Client <br>
    c. Reactive gateway  <br>
-   d. Eureka Discovery Client  <br>
-   e. Lombok  <br>
-   f. Spring webflux  <br>
-   g. Gson  <br>
-   h. jjwt-api  <br>
-   i. jjwt-impl  <br>
-   j. jjwt-jackson  <br>
+   d. Eureka Discovery Client <br>
+   e. Lombok <br>
+   f. Spring webflux <br>
+   g. Gson <br>
+   h. jjwt-api <br>
+   i. jjwt-impl <br>
+   j. jjwt-jackson
 
-4. be-auth
-   a. Spring Boot Actuator
-   b. Spring Data JPA
-   c. Spring Security
-   d. Eureka Discovery Client
-   e. Config Client
-   f. H2 Database
-   g. Lombok
-   h. Spring Boot Starter Validation
-   i. jjwt-api
-   j. jjwt-impl
+### 4. be-auth
+   a. Spring Boot Actuator <br>
+   b. Spring Data JPA <br>
+   c. Spring Security <br>
+   d. Eureka Discovery Client <br>
+   e. Config Client <br>
+   f. H2 Database <br>
+   g. Lombok <br>
+   h. Spring Boot Starter Validation <br>
+   i. jjwt-api <br>
+   j. jjwt-impl <br>
    k. jjwt-jackson
 
-5. be-catalog
-   a. Spring Boot Actuator
-   b. Spring Data JPA
-   c. Eureka Discovery Client
-   d. Config Client
-   f. H2 Database
-   g. Lombok
+### 5. be-catalog
+   a. Spring Boot Actuator <br>
+   b. Spring Data JPA <br>
+   c. Eureka Discovery Client <br>
+   d. Config Client <br>
+   f. H2 Database <br>
+   g. Lombok <br>
    h. Spring Boot Starter Validation
 
-6. be-report
-   a. Spring Boot Actuator
-   b. Spring Data JPA
-   c. Eureka Discovery Client
-   d. Config Client
-   f. H2 Database
-   g. Lombok
-   h. Spring Boot Starter Validation
+### 6. be-report
+   a. Spring Boot Actuator <br>
+   b. Spring Data JPA <br>
+   c. Eureka Discovery Client <br>
+   d. Config Client <br>
+   f. H2 Database <br>
+   g. Lombok <br>
+   h. Spring Boot Starter Validation <br>
    i. OpenFeign
