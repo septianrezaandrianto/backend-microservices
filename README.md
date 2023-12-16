@@ -28,8 +28,8 @@
    b. Config Client
    c. Eureka Server
 
-3. be-gateway
-   a. Spring Boot Actuator
+3. be-gateway\n
+   a. Spring Boot Actuator\n
    b. Config Client
    c. Reactive gateway
    d. Eureka Discovery Client
