@@ -28,17 +28,17 @@
    b. Config Client
    c. Eureka Server
 
-3. be-gateway\n
-   a. Spring Boot Actuator\n
-   b. Config Client
-   c. Reactive gateway
-   d. Eureka Discovery Client
-   e. Lombok
-   f. Spring webflux
-   g. Gson
-   h. jjwt-api
-   i. jjwt-impl
-   j. jjwt-jackson
+3. be-gateway
+   a. Spring Boot Actuator <br>
+   b. Config Client <br>
+   c. Reactive gateway  <br>
+   d. Eureka Discovery Client  <br>
+   e. Lombok  <br>
+   f. Spring webflux  <br>
+   g. Gson  <br>
+   h. jjwt-api  <br>
+   i. jjwt-impl  <br>
+   j. jjwt-jackson  <br>
 
 4. be-auth
    a. Spring Boot Actuator
