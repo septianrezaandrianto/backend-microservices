@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: catalog
+          uri: http://localhost:8090
+          predicates:
+            - Path=/product/**, /category/**
+          filters:
+            - AuthFilter
+
+        - id: order
+          uri: http://localhost:8091
+          predicates:
+            - Path=/shop/**
+          filters:
+            - AuthFilter
+
+        - id: auth
+          uri: http://localhost:8092
+          predicates:
+            - Path=/verif/**
+
+eureka:
+  client:
+    register-with-eureka: true
+
+server:
+  port: 8080

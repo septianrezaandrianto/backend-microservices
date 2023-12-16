@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: gateway
+  config:
+    import: optional:configserver:http://localhost:8888
+
+jwt:
+  secret: ======================Ll4Kcolnu=lL4dor7oh===========================

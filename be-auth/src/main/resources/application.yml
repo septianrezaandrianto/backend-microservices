@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: auth
+  config:
+    import: optional:configserver:http://localhost:8888
+
+user:
+  role: Seller|Buyer
+  gender: Male|Female
+
+jwt:
+  secret: ======================Ll4Kcolnu=lL4dor7oh===========================
+  expirationMs: 900000 # 15 minutes
