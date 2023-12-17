@@ -11,8 +11,8 @@
 
 ## Rules of game
 1. The first you must running be-config-service before you run another service
-2. run the be-discovery service and accedd this url from browswe for monitoring your service http://localhost:8761/
-
+2. run the be-discovery service and access this url from browser for monitoring your service http://localhost:8761/
+3. After all services running well, the next step is, create Category, because you need categoryId for create product.
 
 ## Stack 
 1. Java JDK 21
