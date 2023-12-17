@@ -54,9 +54,10 @@ public class ProductService {
 
 
     public Response<Object> getProductPerPage(RequestPage requestPage) {
-        String name = filterMapping(requestPage.getSearchFilter());
+        String name = filterMapping(requestPage.getProductName());
+        String category = filterMapping(requestPage.getCategoryId());
         Pageable paging = PageRequest.of(requestPage.getPageNumber(), requestPage.getPageSize());
-        Page<Product> productPage = productRepository.findPerPage(name, paging);
+        Page<Product> productPage = productRepository.findPerPage(name, category, paging);
 
         return Response.builder()
                 .responseCode(Constant.Response.SUCCESS_CODE)

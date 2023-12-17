@@ -17,5 +17,3 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     database: h2
-    hibernate:
-      ddl-auto: create

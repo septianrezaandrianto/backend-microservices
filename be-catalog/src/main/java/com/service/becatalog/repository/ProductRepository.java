@@ -17,9 +17,10 @@ public interface ProductRepository extends JpaRepository<Product, String> {
     @Query(value = "select * from product where lower(name) = ?1 and is_deleted = false", nativeQuery = true)
     Product findByName(String name);
 
-    @Query(value = "select * from product where lower(name) like ?1 and is_deleted = false order by created_date asc",
-            nativeQuery = true)
-    Page<Product> findPerPage(String name, Pageable pageable);
+    @Query(value = "select p.* from product p " +
+            "join category c on p.category_id = c.id where lower(p.name) like ?1 " +
+            "and c.id like ?2 and p.is_deleted = false order by p.created_date asc", nativeQuery = true)
+    Page<Product> findPerPage(String name, String categoryId, Pageable pageable);
 
     @Query(value="select * from product where id =?1 and is_deleted = false", nativeQuery = true)
     Product findByProductId(String id);

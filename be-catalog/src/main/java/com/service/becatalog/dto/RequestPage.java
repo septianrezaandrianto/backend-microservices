@@ -10,6 +10,7 @@ public class RequestPage {
     private int pageNumber;
     @NotNull(message = "Price name is mandatory, please fill it!")
     private int pageSize;
-    private String searchFilter;
+    private String productName;
+    private String categoryId;
 
 }

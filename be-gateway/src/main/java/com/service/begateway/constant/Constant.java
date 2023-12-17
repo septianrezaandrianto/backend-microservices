@@ -14,7 +14,8 @@ public interface Constant {
             "/verif/register",
             "/verif/login",
             "/verif/validateAccessToken",
-            "/eureka"
+            "/eureka",
+            "/productReport/generateProductReport"
     );
 
     class Message {

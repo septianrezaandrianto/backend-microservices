@@ -12,10 +12,10 @@ spring:
           filters:
             - AuthFilter
 
-        - id: order
+        - id: report
           uri: http://localhost:8091
           predicates:
-            - Path=/shop/**
+            - Path=/productReport/**
           filters:
             - AuthFilter
 
