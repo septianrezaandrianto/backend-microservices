@@ -1,6 +1,5 @@
 # backend-service
-![microservices](https://github.com/septianrezaandrianto/backend-microservices/assets/40193377/3b8e4792-34e9-4c1f-ab97-fb6f85a9e89d)
-
+![microservices](https://github.com/septianrezaandrianto/backend-microservices/assets/40193377/d31cb272-3720-497f-b2d9-d0968983e9b6)
 
 ## List of Service
 1. be-config-service : For put all config from another service,
