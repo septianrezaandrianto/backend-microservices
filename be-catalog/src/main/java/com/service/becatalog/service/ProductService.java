@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
@@ -62,9 +63,9 @@ public class ProductService {
         return Response.builder()
                 .responseCode(Constant.Response.SUCCESS_CODE)
                 .responseMessage(Constant.Response.SUCCESS_MESSAGE)
-                .data(productPage.getContent())
-                .totalPage(productPage.getTotalPages())
-                .totalData(productPage.getTotalElements())
+                .data(Objects.nonNull(productPage) ? productPage.getContent() : new ArrayList<>())
+                .totalPage(Objects.nonNull(productPage) ? productPage.getTotalPages() : null)
+                .totalData(Objects.nonNull(productPage) ?  productPage.getTotalElements() : null)
                 .pageNumber(requestPage.getPageNumber())
                 .pageSize(requestPage.getPageSize())
                 .build();

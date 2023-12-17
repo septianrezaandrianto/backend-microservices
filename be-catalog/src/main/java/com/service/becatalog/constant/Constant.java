@@ -16,10 +16,5 @@ public interface Constant {
         public static final String FORBIDDEN_REQUEST_MESSAGE = "Different {value} with exist data is forbidden";
     }
 
-    class DateFormatter {
-        public static final SimpleDateFormat DISPLAY_DATE_FORMATTER = new SimpleDateFormat("dd/MM/yyyy");
-        public static final SimpleDateFormat FULL_DISPLAY_DATE_FORMATTER = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        public static final SimpleDateFormat FULL_DATE_FORMATTER = new SimpleDateFormat("dd MMMM yyyy",  new Locale("id", "ID"));
-    }
 
 }
