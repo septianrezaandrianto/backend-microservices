@@ -5,7 +5,7 @@
 1. Java Spring Boot Microservices #Part I (Config Server dan Discovery Implementasi) : https://medium.com/@septianrezaa/java-spring-boot-microservices-part-i-config-server-dan-discovery-implementasi-25aa15cfe29d
    
 ## List of Service
-1. be-config-service : For put all config from another service,
+1. be-config-server : For put all config from another service,
 2. be-discovery : Service Discovery helps us by providing a database of available service instances so that services can be discovered, registered, and de-registered based on usage,
 3. be-gateway : For routing and filtering incoming requests to microservices,
 4. be-auth : Authorization service for handling security,
@@ -23,7 +23,7 @@
 3. Maven 3.9.1
 
 ## Libraries :
-### 1. be-config-service :
+### 1. be-config-server :
    a. Config Server 
    
 ### 2. be-discovery :
