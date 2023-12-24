@@ -1,6 +1,9 @@
 # backend-service
 ![microservices](https://github.com/septianrezaandrianto/backend-microservices/assets/40193377/b66b8cbd-57da-4bbf-a7b0-52d17918256d)
 
+## Medium Link :
+1. Java Spring Boot Microservices #Part I (Config Server dan Discovery Implementasi) : https://medium.com/@septianrezaa/java-spring-boot-microservices-part-i-config-server-dan-discovery-implementasi-25aa15cfe29d
+   
 ## List of Service
 1. be-config-service : For put all config from another service,
 2. be-discovery : Service Discovery helps us by providing a database of available service instances so that services can be discovered, registered, and de-registered based on usage,
@@ -8,7 +11,6 @@
 4. be-auth : Authorization service for handling security,
 5. be-catalog : as a main project for handling crud,
 6. be-report : as a main project for generate report.
-
 
 ## Rules of game
 1. The first you must running be-config-service before you run another service
