@@ -22,11 +22,11 @@
 
 ## Libraries :
 ### 1. be-config-service :
-   a. Config Server
+   a. Config Server 
    
 ### 2. be-discovery :
-   a. Spring Boot Actuator
-   b. Config Client
+   a. Spring Boot Actuator <br>
+   b. Config Client <br>
    c. Eureka Server
 
 ### 3. be-gateway
