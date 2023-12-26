@@ -29,4 +29,9 @@ public class UserController {
     public ResponseEntity<Object> validateAccessToken(@RequestParam(value = "accessToken", defaultValue = "")String accessToken) {
         return ResponseEntity.ok(userService.validateAccessToken(accessToken));
     }
+
+    @GetMapping(value = "/test")
+    public ResponseEntity<Object> doTest() {
+        return ResponseEntity.ok("Success Test");
+    }
 }
