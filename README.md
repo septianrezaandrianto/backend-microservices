@@ -3,6 +3,7 @@
 
 ## Medium Link :
 1. Java Spring Boot Microservices #Part I (Config Server dan Discovery Implementasi) : https://medium.com/@septianrezaa/java-spring-boot-microservices-part-i-config-server-dan-discovery-implementasi-25aa15cfe29d
+2. Java Spring Boot Microservices #Part II (Authorization / Security Implementasi) : https://medium.com/@septianrezaa/java-spring-boot-microservices-part-ii-authorization-security-implementasi-58c2ae1c7485
    
 ## List of Service
 1. be-config-server : For put all config from another service,
