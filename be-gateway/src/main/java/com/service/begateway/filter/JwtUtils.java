@@ -29,12 +29,11 @@ public class JwtUtils {
             String[] chunks = authToken.split("\\.");
             String header = new String(decoder.decode(chunks[0]));
             String payload = new String(decoder.decode(chunks[1]));
-            log.info("header= " + header);
-            log.info("payload= " + payload);
-            log.info("payload2= " + payload.split(":")[3].replace("}", ""));
-            if (this.nowDate.before(Date.from(Instant.ofEpochSecond(Long.valueOf(payload.split(":")[3].replace("}", "")))))) {
+            String expiredEpochTime = payload.split(":")[3].replace("}", "");
+            log.info("header= " + header + " |payload=  " + payload + " |expiredEpochTime " + expiredEpochTime);
+
+            if (this.nowDate.before(Date.from(Instant.ofEpochSecond(Long.valueOf(expiredEpochTime))))) {
                 Jwts.parser().setSigningKey(key()).build().parse(authToken);
-                log.info("A");
                 return true;
             }
         } catch (MalformedJwtException e) {
