@@ -21,8 +21,8 @@
 
 ## Stack 
 1. Java JDK 21
-2. Spring Boot 3.2.0
-3. Maven 3.9.1
+2. Spring Boot 3.3.0
+3. Maven 3.9.7
 
 ## Libraries :
 ### 1. be-config-server :
